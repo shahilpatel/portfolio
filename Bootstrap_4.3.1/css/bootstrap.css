@@ -41,20 +41,7 @@
 *::after {
   box-sizing: border-box;
 }
-/* Added a DHS id, moves the DHS logo to the right */
-#DHS {
-  position: relative;
-  left: 50em;
-}
-#instagram {
-  position: relative;
-  left:15em;
-}
-#email {
-  position: relative;
-  left:5em;
-
-}
+/*floats the card to the right */
 .cardpic{
   float: right;
   margin: 25px;
@@ -66,9 +53,105 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+* {
+  box-sizing: border-box;
+}
+
+
+/* Used https://www.w3schools.com/howto/howto_js_slideshow.asp to give me inspiratuon for the html, css, and javascript code to make an image slideshow  */
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+.col-md-{
+  float: left;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: relative;
+  padding: 3px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   f: block;
 }
+
+
+
+
 
 body {
   margin: 0;
@@ -76,9 +159,10 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #ffffff;
   text-align: left;
-  background-color: #fff;
+  /* added a gradient background */
+  background-color: #4f6b9c;
 }
 
 [tabindex="-1"]:focus {
@@ -169,15 +253,15 @@ sub {
 sup {
   top: -.5em;
 }
-
+/* changes link color to black */
 a {
-  color: #007bff;
-  text-decoration: none;
+  color: #000000;
+  text-decoration: underline;
   background-color: transparent;
 }
-
+/* when hovered, color changes */
 a:hover {
-  color: #0056b3;
+  color: #47474b;
   text-decoration: underline;
 }
 
@@ -4076,15 +4160,18 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-}
 
+}
+/* the link is black, not the default blue */
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-}
-
+  color: black;}
+/* Underlines and changes color when hovered over by mouse.  Makes font bigger when hovered over it */
 .nav-link:hover, .nav-link:focus {
-  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: underline;
 }
 
 .nav-link.disabled {
@@ -4119,7 +4206,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #000000;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -4136,8 +4223,8 @@ input[type="button"].btn-block {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #007bff;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .nav-fill .nav-item {
@@ -4566,7 +4653,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
   color: #fff;
 }
-
+/* Edited this */
 .card {
   position: relative;
   display: -ms-flexbox;
@@ -4575,10 +4662,15 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  /* changes the color of the card to green */
+  background-color: #507551;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  /* creates a shadow around the card */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* creates a border around the card */
+  border: 1.0px solid rgb(255, 255, 255);
+
 }
 
 .card > hr {
@@ -4617,10 +4709,12 @@ input[type="button"].btn-block {
 
 .card-link:hover {
   text-decoration: none;
+  color: white;
 }
 
 .card-link + .card-link {
   margin-left: 1.25rem;
+  color: black;
 }
 
 .card-header {
@@ -5102,10 +5196,17 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .jumbotron {
+  margin-top: 10px;
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  color: whitesmoke;
+  /* changes background color of the jumbotron */
+  background-color: #507551;
   border-radius: 0.3rem;
+  /* Creates a shadow effect and a border around the jumbotron */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 2.0px solid rgb(255, 255, 255);
+
 }
 
 @media (min-width: 576px) {
