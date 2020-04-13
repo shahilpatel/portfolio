@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html class="animated zoomIn">
 
-<head>
-	<title></title>
-	<link href="./Bootstrap_4.3.1/css/bootstrap.css" rel="stylesheet" type="text/css"/>
-</head>
-<div class="container"
-<body>
-	<ul class="nav nav-pills nav-fill">
-		<li class="nav-item">
-			<a class="nav-link " href="index.html">Home</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link active" href="Patel_AboutMe.html">About Me</a>
-		</li>
-		<li class="nav-item">
+  <head>
+	  <title></title>
+	  <link href="./Bootstrap_4.3.1/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <script src="./Bootstrap_4.3.1/js/bootstrap.js"></script>
+
+  </head>
+<!--Navigation Bar Code-->
+
+  <body>
+    <div class="container">
+	    <ul class="nav nav-pills nav-fill">
+		    <li class="nav-item">
+			    <a class="nav-link " href="index.html">Home</a>
+		    </li>
+		    <li class="nav-item">
+			    <a class="nav-link active" href="Patel_AboutMe.html">About Me</a>
+		    </li>
+		    <li class="nav-item">
 			<a class="nav-link" href="Patel_Resume.html">Resume</a>
 		</li>
 		<li class="nav-item">
@@ -23,36 +27,123 @@
 		<li class="nav-item">
 			<a class="nav-link" href="Patel_ContactMe.html">Contact Me</a>
 		</li>
-		<!-- From bootstrap Fluid Jumbotron (https://getbootstrap.com/docs/4.1/components/jumbotron/)-->
-	</ul>
-	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-			<h1 class="display-4">
-				<center> <strong> Online Portfolio </strong> </center> </h1>
-        <h2 class="lead"> <center> <strong> Shahil Patel </center> </strong> </h2>
+		<!-- From bootstrap Fluid Jumbotron (https://getbootstrap.com/docs/4.1/components/jumbotron/) Jumbotron Coding at the top-->
+	  </ul>
+	  <div class="jumbotron text-center">
+			<h1> <strong> About Me </strong> </h1>
     </div>
     <!-- Hoizontal Card from bootstrap (https://getbootstrap.com/docs/4.3/components/card/#horizontal) -->
-    <div class="card mb-3">
-      <div class="row no-gutters">
-        <div class="col-md-4" id="Portrait">
-           <img src="./Images/portrait.jpg"  alt="image of me" hspace="50" width="195" height="275">
-        </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">About Me</h5>
-          <p class="card-text"> My personal career goal is to become an economist for a major company.  I plan to go to a 4-year college and recieve a degreee in economics.  I preferbably  </p>
+    <section class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+           <img src="./Images/portrait.jpg"  alt="image of me" class="img-thumbnail">
+          </div>
+          <div class="col-md-8">
+            <h3> Shahil Patel </h3>
+            <br>
+            <!-- My about me text -->
+            <p class="card-text" style="text-indent: 40px">Hello. My name is Shahil Patel, and I am a sophomore at Dublin High School. My personal career goal is to become an economist for a major company.  I am an avid skier and enjoy taking and editing photos in my free time.  I plan to go to a 4-year college and receive a degree in economics, and hopefully receive a Masters Degree afterward. In high school, I plan to take Advanced Placement Statistics and Advanced Placement Microeconomics, since these classes would help me advance my knowledge in this career. I have an interest in economics, as I am fascinated in the stock market, and the way our economy works. Incorporating computer science into my career is an ambition for me, because I am interested in the ways computer and data science can relate to this career pathway. </p>
+            <p class="card-text" style="text-indent: 40px"> The experience I have that relates to this career is having an adequate understanding of the stock market and how it works. I own shares of companies that are on the New York Stock Exchange, and regularly buy and trade shares. I also have good communication skills, as I referee teenage soccer as a weekend job. This job involves communicating with adults and children, and maintaining poise and focus as I officiate. I have implemented these skills in Model United Nations club, which involves a substantial amount of public speaking and confidence. </p>
+            <p class="card-text" style="text-indent: 40px">Some of the major accomplishments that I achieved in high school is maintaining a 4.0 cumulative grade point average and earning a 5 on the Advanced Placement Human Geography Exam.  Achieving these feats, required hours of hardwork and dedication.  I needed to manage my time in order to both complete the required courseload, and study the content that I did not comprehend fully.</p>
+            <p class="card-text" style="text-indent: 40px">Thank you for taking the time to read this page. Help yourself to explore the other information that is present on this website.  If you have any questions or comments, feel free to email me at shahilmpatel1@gmail.com. </p>
+            
+            <hr>
+            
+            <h5> Here are a few photos that I have recently taken and edited: </h5>
+          <h6> Serengeti National Park and Ngorongoro Crater National Park - <i> Tanzania </i> </h6>
+          <br>
+
+          
+            <!-- Used https://www.w3schools.com/howto/howto_js_slideshow.asp to give me inspiratuon for the html, css, and javascript code to make an image slideshow -->
+            <div class="container" >
+              <!-- Full-width images with number text -->
+              <div class="mySlides" style="display: block;">
+                <div class="numbertext">1 / 6</div>
+                  <img src="./Images/lion.jpg" style="width:100%" >
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                  <img src="./Images/cheetah.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                  <img src="./Images/view.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                  <img src="./Images/elephant.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                  <img src="./Images/ram.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                  <img src="./Images/zebra.jpg" style="width:100%">
+              </div>
+              
+
+              <!-- Next and previous buttons -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+
+             
+
+              <!-- Thumbnail images -->
+
+              <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="./Images/lion.jpg" style="width:100%" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./Images/cheetah.jpg" style="width:100%" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./Images/view.jpg" style="width:100%" onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./Images/elephant.jpg" style="width:100%" onclick="currentSlide(4)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./Images/ram.jpg" style="width:100%" onclick="currentSlide(5)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./Images/zebra.jpg" style="width:100%" onclick="currentSlide(6)">
+                </div>
+              </div>
+            </div>
+            <br>
+          </div>
+          </div>
         </div>
       </div> 
     </div>
-      <!-- I used the jumbotron layout in the footer (https://getbootstrap.com/docs/4.3/components/jumbotron/) -->
-    <footer class="footer">
-      <div class="jumbotron jumbotron-fluid">
-        <!--Email-->
-        <a href="#"> <img id="email" src="./Images/email.png" width="70" height="70"></a>
-        <a href="#"> <img id="instagram" src="./Images/instagram.png" width="70" height="70"></a>
-        <img id="DHS" src="./Images/DHS2.png" width="70" height="100">
+  </section>
+
+      <!-- I used the jumbotron layout in the footer (https://getbootstrap.com/docs/4.3/components/jumbotron/) The footer elements -->
+    <footer class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-3">
+          <!-- Email -->
+            <a href="https://mail.google.com"> 
+              <img src="./Images/email.png" style="max-width:100px">
+            </a>
+          </div>
+          <div class="col-5">
+            <a href="http://www.dublin.k12.ca.us/dhs">
+              <img src="./Images/DHS2.png" style="max-width:100px" class="float-right">
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
-    </div>
   </body>
 </html>

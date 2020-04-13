@@ -1,35 +1,75 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="utf-8">
-	<title></title>
-	<link href="./Bootstrap_4.3.1/css/bootstrap.css" rel="stylesheet" type="text/css" />
-</head>
+  <head>
+	  <meta charset="utf-8">
+	  <title></title>
+	  <link href="./Bootstrap_4.3.1/css/bootstrap.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-  <div class="container">
-	<!-- Used the bootstrap fill and justify nav "https://getbootstrap.com/docs/4.0/components/navs/#fill-and-justify" -->
-	<ul class="nav nav-pills nav-fill">
-		<li class="nav-item">
-			<a class="nav-link" href="index.html">Home</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="Patel_AboutMe.html">About Me</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="Patel_Resume.html">Resume</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link active" href="Patel_Projects.html">Projects</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="Patel_ContactMe.html">Contact Me</a>
-		</li>
-	</ul>
-  	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-			<h1 class="display-4">
-				<center> <strong> Projects </strong> </center> </h1>
-        <h2 class="lead"> <center> <strong> Shahil Patel </center> </strong> </h2>
-    </div>
+  <body>
+    <div class="container">
+	  <!-- Used the bootstrap fill and justify nav "https://getbootstrap.com/docs/4.0/components/navs/#fill-and-justify" Navigation bar at the top of the page-->
+	    <ul class="nav nav-pills nav-fill">
+		    <li class="nav-item">
+			    <a class="nav-link" href="index.html">Home</a>
+		    </li>
+		    <li class="nav-item">
+			    <a class="nav-link" href="Patel_AboutMe.html">About Me</a>
+		    </li>
+		    <li class="nav-item">
+			    <a class="nav-link" href="Patel_Resume.html">Resume</a>
+		    </li>
+		    <li class="nav-item">
+			    <a class="nav-link active" href="Patel_Projects.html">Projects</a>
+		    </li>
+		    <li class="nav-item">
+			    <a class="nav-link" href="Patel_ContactMe.html">Contact Me</a>
+		    </li>
+	    </ul>
+  	  <div class="jumbotron text-center">
+			<h1> <strong> Projects </strong> </h1>
+      </div>
+<!-- content starts for the projects page -->
+    <section class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <br>
+           <img src="./Images/statequiz.png"  alt="statequiz image" class="img-thumbnail">
+          </div>
+          <div class="col-md-8">
+            <!-- All content for the projects page.  Included 2 links -->
+            <br>
+            <h3> <strong> State Quiz Game </strong> </h3>
+            <h5> September 2019 - October 2019, Computer Science Principles </h5>
+            <p class="card-text"> The goal of this project was to enhance a geography related game on MIT App Inventor, which could be played on a tablet. The original game was a guessing game of 10 States and Capitals in the United States.  My partner and I decided to improve the original game in different ways.  We made a <a href="https://drive.google.com/file/d/1kQXmxtbqYwKwn79sOKRb4fZXIAWm1sP0/view?usp=sharing" target="_blank">documentation</a> to record everything that was accomplished in this project.  We added a timer, more states and capitals, a help page, a score table, and a celebrity quiz mode. We both worked together on the project and did not have a designated role. This was more efficient, as we were both on the same page for everything that was being done on this project.  We made sure to follow everything that was listed on the <a href="https://drive.google.com/file/d/15p_dTKbxgZC407oPHWKzwtSm-PoCVkiz/view?usp=sharing" target= "_blank">rubric</a> to accomplish our goal.  A challenge that we encountered was the app not being able to support all 50 states. We decided to add more features to the app, and only have 15 states in our game.  We communicated well throughout the project, as most of the work on this project was done in class. If work was needed to be done at home, we communicated through text messages.  Some skills that I learned while doing this project, was that teamwork and communication can make or break a project. Communication allowed us to stay organized and work efficiently throughout the project.  I also learned that commenting on code can make finding mistakes and errors easier, which saves time and effort.  
+            </p>
+            <br>
+            <br>
+            <br>
+          </div>
+         </div>
+        </div> 
+      </div>
+    </section>
+   <!-- I used the jumbotron layout in the footer (https://getbootstrap.com/docs/4.3/components/jumbotron/) Footer element for page -->
+   <footer class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-3">
+              <!-- Email -->
+            <a href="https://mail.google.com"> 
+              <img src="./Images/email.png" style="max-width:100px">
+            </a>
+          </div>
+          <div class="col-5">
+            <a href= "http://www.dublin.k12.ca.us/dhs">
+              <img src="./Images/DHS2.png" style="max-width:100px" class="float-right">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,84 +1,84 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="utf-8">
-	<title></title>
-	<link href="./Bootstrap_4.3.1/css/bootstrap.css" rel="stylesheet" type="text/css" />
-</head>
+  <head>
+	  <meta charset="utf-8">
+	  <title></title>
+	  <link href="./Bootstrap_4.3.1/css/bootstrap.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-  <div class="container">
-	<!-- Used the bootstrap fill and justify nav "https://getbootstrap.com/docs/4.0/components/navs/#fill-and-justify" -->
-	<ul class="nav nav-pills nav-fill">
-		<li class="nav-item">
-			<a class="nav-link active" href="index.html">Home</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="Patel_AboutMe.html">About Me</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="Patel_Resume.html">Resume</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="Patel_Projects.html">Projects</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="Patel_ContactMe.html">Contact Me</a>
-		</li>
-	</ul>
-	<!-- Used the jumbotron component on bootstrap (https://getbootstrap.com/docs/4.3/components/jumbotron/>)-->
-	<div class="jumbotron">
-		<h1 class="display-4">Shahil Patel's Engineering Portfolio</h1>
-		<p class="lead">I am a 10th grader at Dublin High School. I am taking a computer science class.</p>
-		<a href="Patel_AboutMe.html"> Continue Reading... </a>
-	</div>
-	<!-- Used the grid markup card on bootstrap (https://getbootstrap.com/docs/4.3/components/card/#sizing)-->
-  <div class="row">
-		<div class="col-sm-6">
-			<div class="card">
-        <div class="card-body">
-          <img src="./Images/contactme.jpg" height="200px" width="170px" class="cardpic"  alt="Card image cap">
-          <h5> <strong> Contact Me</strong></h5>
-					<h5 class="text-dark">How to Contact Me</h5>
-					<p class="card-text mb-auto">This is a link to my contact information.</p>
-					<a href="Patel_ContactMe.html">Click here to read more...</a>
-				</div>
-          </div>
-        </div>
+  <body>
+    <div class="container">
+    <!-- Used the bootstrap fill and justify nav "https://getbootstrap.com/docs/4.0/components/navs/#fill-and-justify" Navigation Bar at the top of the page-->
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html"> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Patel_AboutMe.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Patel_Resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Patel_Projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Patel_ContactMe.html">Contact Me</a>
+        </li>
+      </ul>
+      <!-- Used the jumbotron component on bootstrap (https://getbootstrap.com/docs/4.3/components/jumbotron/>)  Displays the title of the page-->
+      <div class="jumbotron">
+        <h1 class="display-4">Shahil Patel's Engineering Portfolio</h1>
+        <p class="lead">I am a 10th grader taking Computer Science Principles at Dublin High School.</p>
+        <a href="Patel_AboutMe.html"> Continue Reading... </a>
+      </div>
+      <!-- Used the grid markup card on bootstrap (https://getbootstrap.com/docs/4.3/components/card/#sizing)  includes 4 tables to display information-->
+      <!-- First Table -->
+      <div class="row">
         <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
-              <img src="./Images/scratch.jpg" width="200px" height="200px" class="cardpic"  alt="Card image cap">
-                <h5> <strong> Projects</strong></h5>
-                <h5>Scratch Project</h5>
-              <p class="card-text mb-auto">Read more about my Scratch project.</p>
+              <img src="./Images/contactme.jpg" height="200px" width="150px" class="cardpic"  alt="Card image cap">
+              <h5> <strong> Contact Me</strong></h5>
+              <p class="card-text mb-auto">This is a link to my contact information.</p>
               <a href="Patel_ContactMe.html">Click here to read more...</a>
             </div>
           </div>
         </div>
-        </div>
-      
-    <div class="row">
-       <div class="col-sm-6">
+        <!-- Second Table -->
+        <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
-              <img src="./Images/resume.jpg" height="200px" class="cardpic"  alt="Card image cap">
+              <img src="./Images/cheetahthin.jpg" width="150px" height="200px" class="cardpic"  alt="Card image cap">
+              <h5> <strong> Photography</strong></h5>
+              <p class="card-text mb-auto"> Recently taken and edited photographs.</p>
+              <a href="Patel_AboutMe.html">Click here to see them...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!-- Third Table -->
+          <br>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="./Images/resume.jpg" height="200px" width="150px" class="cardpic"  alt="Card image cap">
               <h5> <strong> Resume</strong></h5>
-              <h5 class="text-dark">My Resume</h5>
-              <p class="card-text mb-auto">This is a link to my resume.</p>
-              <a href="Patel_ContactMe.html">Click here to read more...</a>
+              <p class="card-text mb-auto">This is a link to my professional resume.</p>
+              <a href="Patel_Resume.html">Click here to read more...</a>
             </div>
           </div>
         </div>
+        <!-- Fourth Table -->
         <div class="col-sm-6">
           <div class="card">
             <div class="card-body">
-              <img src="./Images/mit.pbm" height="200px" class="cardpic"  alt="Card image cap">
-              <h5> <strong> Projects</strong></h5>
-              <h5>MIT App Inventor Project</h5>
-              <p class="card-text mb-auto">Read more about my MIT App Inventor project.</p>
-              <a href="Patel_ContactMe.html">Click here to read more...</a>
+              <img src="./Images/mit.pbm" height="200px" width= "150px" class="cardpic"  alt="Card image cap">
+              <h5> <strong> MIT App Inventor Project</strong></h5>
+              <p class="card-text mb-auto">Read more about this project.</p>
+              <a href="Patel_Projects.html">Click here to read more...</a>
             </div>
           </div>
         </div>
@@ -86,17 +86,23 @@
     </div>
     <br>
     <br>
-    
-<!-- I used the jumbotron layout in the footer (https://getbootstrap.com/docs/4.3/components/jumbotron/) -->
-    <footer class="footer">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <!--Email-->
-          <a href="#"> <img id="email" src="./Images/email.png" width="70" height="70"></a>
-          <a href="#"> <img id="instagram" src="./Images/instagram.png" width="70" height="70"></a>
-          <img id="DHS" src="./Images/DHS2.png" width="70" height="100">
+      
+  <!-- I used the jumbotron layout in the footer (https://getbootstrap.com/docs/4.3/components/jumbotron/) Footer Section of the page-->
+    <footer class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-3">
+            <!-- Email -->
+            <a href="https://mail.google.com"> 
+            <img src="./Images/email.png" style="max-width:100px">
+            </a>
+          </div>
+          <div class="col-5">
+            <a href="http://www.dublin.k12.ca.us/dhs">
+            <img src="./Images/DHS2.png" style="max-width:100px" class="float-right">
+            </a>
+          </div>
         </div>
-      </div>
       </div>
     </footer>
   </body>

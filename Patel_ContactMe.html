@@ -1,35 +1,69 @@
 <!DOCTYPE html>
+
 <html>
 
-<head>
-	<meta charset="utf-8">
-	<title></title>
-	<link href="./Bootstrap_4.3.1/css/bootstrap.css" rel="stylesheet" type="text/css" />
-</head>
+  <head>
+	  <meta charset="utf-8">
+	  <title></title>
+	  <link href="./Bootstrap_4.3.1/css/bootstrap.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
-  <div class="container">
-	<!-- Used the bootstrap fill and justify nav "https://getbootstrap.com/docs/4.0/components/navs/#fill-and-justify" -->
-	<ul class="nav nav-pills nav-fill">
-		<li class="nav-item">
-			<a class="nav-link" href="index.html">Home</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="Patel_AboutMe.html">About Me</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="Patel_Resume.html">Resume</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" href="Patel_Projects.html">Projects</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link active" href="Patel_ContactMe.html">Contact Me</a>
-		</li>
-	</ul>
-  	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-			<h1 class="display-4">
-				<center> <strong> Contact Me </strong> </center> </h1>
-        <h2 class="lead"> <center> <strong> Shahil Patel </center> </strong> </h2>
+  <body>
+    <div class="container">
+	  <!-- Used the bootstrap fill and justify nav "https://getbootstrap.com/docs/4.0/components/navs/#fill-and-justify" navigation bar at the top of the page-->
+	    <ul class="nav nav-pills nav-fill">
+		    <li class="nav-item">
+			    <a class="nav-link" href="index.html">Home</a>
+		    </li>
+		    <li class="nav-item">
+			    <a class="nav-link" href="Patel_AboutMe.html">About Me</a>
+		    </li>
+		    <li class="nav-item">
+			    <a class="nav-link" href="Patel_Resume.html">Resume</a>
+		    </li>
+		    <li class="nav-item">
+			    <a class="nav-link" href="Patel_Projects.html">Projects</a>
+		    </li>
+		    <li class="nav-item">
+			    <a class="nav-link active" href="Patel_ContactMe.html">Contact Me</a>
+		    </li>
+	    </ul>
+    
+  	  <div class="jumbotron text-center">
+        <!-- All the content for the contact me page -->
+			  <h1> <strong> Contact Me </strong> </h1>
+      </div>
+      <div>
+        <br>
+        <br>
+        <br>
+        <!-- included my email and city where I live -->
+        <h3> <center> <strong> Email </strong>: shahilmpatel1@gmail.com </center> </h3>
+        <br>
+        <h3> <center> <strong> City </strong> : Dublin, California </center> </h3>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
     </div>
+<!-- I used the jumbotron layout in the footer (https://getbootstrap.com/docs/4.3/components/jumbotron/) All the content for the footer. -->
+    <footer class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-3">
+            <!-- Email -->
+            <a href="https://mail.google.com"> 
+              <img src="./Images/email.png" style="max-width:100px">
+            </a>
+          </div>
+          <div class="col-5">
+            <a href="http://www.dublin.k12.ca.us/dhs">
+              <img src="./Images/DHS2.png" style="max-width:100px" class="float-right">
+            </a>
+          </div>
+        </div>
+      </div>  
+    </footer>
+  </body>
+</html>
